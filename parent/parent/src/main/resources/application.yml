@@ -1,0 +1,28 @@
+server:
+  port: 9090
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: parent-service
+        version: 1.0.1
+        type: sync
+        stdio: true
+        enabled: true
+        sse-endpoint: /sse
+    ollama:
+      chat:
+        model: llama3.2
+        options:
+          model: llama3.2
+
+app:
+  agents:
+    - id: agent1
+      name: Order Agent
+      url: http://localhost:8081
+
+    - id: agent2
+      name: Seller Agent
+      url: http://localhost:8082

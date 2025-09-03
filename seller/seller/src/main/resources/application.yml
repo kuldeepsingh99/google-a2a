@@ -1,0 +1,16 @@
+server:
+  port: 8082
+
+spring:
+  ai:
+    mcp:
+      server:
+        name: seller-service
+        version: 1.0.1
+        type: sync
+        stdio: true
+        enabled: true
+        sse-endpoint: /sse
+    ollama:
+      chat:
+        model: llama3.2:latest
