@@ -1,4 +1,4 @@
-# Parent-Child Agent Orchestration (A2A-Compliant)
+# Java Implementation of Google's A2A Protocol (A2A-Compliant)
 
 This project demonstrates how to build an A2A-compliant multi-agent system using Spring Boot, Ollama, and the Agent-to-Agent (A2A) protocol.
 
